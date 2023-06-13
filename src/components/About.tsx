@@ -1,8 +1,6 @@
-import $ from 'jquery';
 import { Slide } from "react-awesome-reveal";
 
 export default function About() {
-  
     return (
         <section id="about" className="one dark cover">
         <div className="container">

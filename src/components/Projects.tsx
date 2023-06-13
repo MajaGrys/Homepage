@@ -2,10 +2,10 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Slide } from "react-awesome-reveal";
 import ModalImage from 'react-modal-image';
 import LazyLoadWrapper from '../components/LazyLoadWrapper';
-import SO1 from '../images/searchOnce1.png';
-import SO1_small from '../images/searchOnce1_small.png';
-import VG1 from '../images/vanGogh1.png';
-import VG1_small from '../images/vanGogh1_small.png';
+import SO1 from '../assets/images/searchOnce.png';
+import SO1_small from '../assets/images/searchOnce_small.png';
+import VG1 from '../assets/images/vanGogh.png';
+import VG1_small from '../assets/images/vanGogh_small.png';
 
 export default function Projects() {
     return (

@@ -1,6 +1,13 @@
 import React from 'react';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Image } from '@chakra-ui/react';
+import {
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure
+} from '@chakra-ui/react';
 
 interface AnchorButton {
   url: string;
@@ -19,7 +26,7 @@ const SidebarButton:FC<AnchorButton> = (props) => {
   const {url, additionalClassName, text} = props;
   const onClick = (e:React.MouseEvent) => onButtonClick(e, url) 
   return (
-    <li><a href={url} onClick={onClick}><span className={`icon solid ${additionalClassName}`}>{text}</span></a></li>
+    <li key={url}><a href={url} onClick={onClick}><span className={`icon solid ${additionalClassName}`}>{text}</span></a></li>
   )
 }
 
@@ -34,6 +41,36 @@ const onButtonClick = (e:React.MouseEvent, url:string) => {
 }
 
 export default function Sidebar() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.createRef<HTMLDivElement>()
+  const [isToggled, setIsToggled] = useState(false)
+  const handleClick = () => {
+    isToggled ? onClose() : onOpen()
+    setIsToggled(!isToggled)
+  }
+
+  return (
+    <> 
+      <div id="headerToggle" ref={btnRef}>
+				<a href="#header" className="toggle" onClick={handleClick}></a>
+			</div>
+
+      <Drawer
+        isOpen={isOpen}
+        placement='left'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay onClick={onClose} />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <SidebarContent />
+        </DrawerContent>
+      </Drawer>
+    </>)
+}
+
+export function SidebarContent() {
     return (
       <div id="header">
         <div className="top">
@@ -49,7 +86,6 @@ export default function Sidebar() {
 
             <h1 id="title">Maja Grys</h1>
             <p>Frontend developer</p>
-
           </div>
     
           <nav id="nav">
@@ -57,17 +93,14 @@ export default function Sidebar() {
               {menuConfig.map(configElement => SidebarButton(configElement))}
             </ul>
           </nav>
-    
         </div>
 
         <div className="bottom">
-
         <ul className="icons">
           <li><a href="https://github.com/MajaGrys" className="icon brands fa-github"><span className="label">Github</span></a></li>
           <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
           <li><a href="#" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
         </ul>
-
         </div>
       </div>
     );

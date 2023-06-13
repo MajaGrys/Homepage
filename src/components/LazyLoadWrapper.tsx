@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, createRef } from "react";
 
 interface LazyLoadWrapperProps {
     options?: IntersectionObserverInit;
-    children?: React.ReactNode; //typeof React.Children;
+    children?: React.ReactNode;
 }
 
 const defaultOptions:IntersectionObserverInit = {
@@ -21,8 +21,7 @@ export const LazyLoadWrapper:React.FC<LazyLoadWrapperProps> = ({options=defaultO
             const isIntersecting = refEntryElement?.isIntersecting
             if (isIntersecting) {
                 setIsLoaded(true)
-                observer.disconnect()                
-                console.log('zzzzzzzzzzzzzz', entries)
+                observer.disconnect()
             }
         }, options)
         if (divRef.current) {io.observe(divRef.current!)}
@@ -30,7 +29,7 @@ export const LazyLoadWrapper:React.FC<LazyLoadWrapperProps> = ({options=defaultO
             io.disconnect()
         }
     }, [])
-    return isLoaded?<>{children}</>:<div ref={divRef} style={{minHeight: '1px'}}/>
+    return isLoaded ? <>{children}</> : <div ref={divRef} style={{minHeight: '1px'}}/>
 }
 
 export default LazyLoadWrapper
