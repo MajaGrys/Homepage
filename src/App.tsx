@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, lazy } from 'react';
+import Sidebar from './components/Sidebar';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+// import Contact from './components/Contact';
+import './assets/css/main.css';
+import './App.scss';
+// import './assets/sass/main.scss';
+// import style from './abc.module.scss';
 
-function App() {
+
+export default function App() {
+  const Contact = React.lazy(() => import('./components/Contact'));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Sidebar />
+    <div id="main">
+    <About />
+    <Skills />
+    <Projects />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Contact />
+    </Suspense>
     </div>
-  );
-}
 
-export default App;
+    <div id="footer">
+      <ul className="copyright">
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </>
+  )
+}

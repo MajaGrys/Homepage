@@ -1,0 +1,41 @@
+//Navigation
+#nav ul li span:hover {
+    color: #b794f4;
+}
+
+//Body
+// h2 {
+//     color: #b794f4;
+// }
+
+//About Me
+#about {
+    max-height: 60vh;
+}
+
+#about header {
+    font-size: 8vh;
+    font-family: 'Parisienne', cursive;
+    color: black;
+    margin-top: -6vh;
+    margin-left: -25vw;
+    margin-bottom: 0px;
+    // background: -webkit-linear-gradient(purple, white);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // text-shadow: 3px 3px 1px rgb(63, 0, 63);
+    color: black;
+    text-shadow: 1px 1px white;
+    // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#about p {
+    font-size: 4vh;
+    margin-top: -5vh;
+    color: black;
+    // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#projects img {
+    border: 1px solid black;
+}
