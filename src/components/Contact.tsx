@@ -6,7 +6,7 @@ export default function Contact() {
         <div className="container">
 
           <header>
-            <Slide duration={2000} triggerOnce={true}>
+            <Slide duration={2000}>
             <h2>Contact</h2>
             </Slide>
           </header>

@@ -4,7 +4,7 @@ import Sidebar, { SidebarContent } from './components/Sidebar';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-// import Data from './components/Data';
+import ChatGPT from './components/ChatGPT';
 import './assets/css/main.css';
 import './App.scss';
 
@@ -22,7 +22,7 @@ export default function App() {
     <Suspense fallback={<div>Loading...</div>}>
       <Contact />
     </Suspense>
-    {/* <Data /> */}
+    <ChatGPT />
     </div>
 
     <div id="footer">

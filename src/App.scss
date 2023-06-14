@@ -36,8 +36,25 @@
     color: black;
 }
 
+//Skills
+
+#skills p {
+    line-height: 2;
+}
+
 //Projects
 
 #projects img {
     border: 1px solid black;
+}
+
+//Chatbot
+
+#chatInput {
+    width: 50%;
+}
+
+#clearInput {
+ color: #888 !important;
+ margin: -20px;
 }

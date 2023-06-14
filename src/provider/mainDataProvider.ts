@@ -1,11 +1,45 @@
+export interface chatGPTResponse {
+        "id"?: string,
+        "object"?: string,
+        "created"?: number,
+        "model"?: string,
+        "usage"?: {
+          "prompt_tokens"?: number,
+          "completion_tokens"?: number,
+          "total_tokens"?: number
+        },
+        "choices"?: [
+          {
+            "message"?: {
+              "role"?: string,
+              "content"?: string
+            },
+            "finish_reason"?: string,
+            "index"?: number
+          }
+        ]
+}
+
 export class Provider {
-    public async getData(
-        url:string,
-        options?: RequestInit
+    private getDefaultOpenAIOptions = (message: string) => ({  
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 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'
+        },
+        body: JSON.stringify(
+          {model: 'gpt-3.5-turbo',messages: [{'role': 'user', content: message}]}
         )
-        {
-            return fetch(url, options)
-        }
+        })
+
+    public async getOpenAIData(
+        message: string,
+        options?: RequestInit
+      ){
+        const fetchOptions = options || this.getDefaultOpenAIOptions(message)
+        return fetch('https://api.openai.com/v1/chat/completions', fetchOptions)
+      }
 }
 
 export default new Provider()

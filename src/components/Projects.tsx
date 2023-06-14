@@ -14,21 +14,18 @@ export default function Projects() {
         <div className="container">
 
           <header>
-            <Slide delay={1000} duration={2000} triggerOnce={true}>
+            <Slide duration={2000}>
             <h2>Projects</h2>
             </Slide>
           </header>
 
-          <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-          egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-          Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-          fusce hendrerit lacus ridiculus.</p>
+          <p>I took part in a number of web development projects, including:</p>
 
           <Tabs isFitted variant='unstyled' align='center'>
             <TabList>
-              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{color: 'gray.900', cursor: 'pointer'}}>SearchOnce</Tab>
-              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{color: 'gray.900', cursor: 'pointer'}}>Van Gogh's Gallery</Tab>
-              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{color: 'gray.900', cursor: 'pointer'}}>Portfolio website</Tab>
+              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{bg: 'purple.200', cursor: 'pointer'}}>SearchOnce</Tab>
+              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{bg: 'purple.200', cursor: 'pointer'}}>Van Gogh's Gallery</Tab>
+              <Tab _selected={{ color: 'white', bg: 'purple.300' }} color='gray.500' as='span' _hover={{bg: 'purple.200', cursor: 'pointer'}}>Portfolio website</Tab>
             </TabList>
 
             <TabPanels>
@@ -64,7 +61,7 @@ export default function Projects() {
               </TabPanel>
 
               <TabPanel>
-                <p>three!</p>
+                <p>This website was created using: HTML, CSS, JavaScript, React, Chakra UI, HTML5UP, OpenAI API</p>
               </TabPanel>
 
             </TabPanels>

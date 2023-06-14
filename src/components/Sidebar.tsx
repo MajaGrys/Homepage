@@ -19,7 +19,8 @@ const menuConfig:AnchorButton[] = [
   {url: '#about', additionalClassName: 'fa-user', text: 'About Me'},
   {url: '#skills', additionalClassName: 'fa-th', text: 'Skills'},
   {url: '#projects', additionalClassName: 'fa-home', text: 'Projects'},
-  {url: '#contact', additionalClassName: 'fa-envelope', text: 'Contact'}
+  {url: '#contact', additionalClassName: 'fa-envelope', text: 'Contact'},
+  {url: '#chat', additionalClassName: 'fa-user', text: 'Chat with AI'}
 ]
           
 const SidebarButton:FC<AnchorButton> = (props) => {
