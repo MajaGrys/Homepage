@@ -8,16 +8,6 @@ export default function ChatGPT() {
     const [data, setData] = useState<chatGPTResponse[]>([])
     const [inputData, setInputData] = useState('')
     const inputRef = createRef<HTMLInputElement>()
-
-    // useEffect(() => {
-    //     Provider.getOpenAIData('https://dog.ceo/api/breeds/image/random')
-    //     .then(res => res.json())
-    //     .then(res => {
-    //         if (res.status === 'success') {
-    //             setData(res.message)
-    //         }
-    //     })
-    // }, [])
     
     let debounceTimeout = 0;
 
@@ -54,7 +44,7 @@ export default function ChatGPT() {
         <section id="chat" className="two">
         <div className="container">
           <header>
-            <Slide duration={2000}>
+            <Slide duration={2000} triggerOnce>
             <h2>Chat with AI</h2>
             </Slide>
           </header>
@@ -74,7 +64,7 @@ export default function ChatGPT() {
             <p key={item.id}>{item?.choices ? item.choices[0]?.message?.content : ''}</p>
         ))}
         
-        {hasData && <Button bg='purple.300' _hover={{bg: 'purple.200', cursor: 'pointer'}} variant='solid' onClick={() => {
+        {hasData && <Button bg='purple.300' _hover={{bg: 'purple.200'}}  onClick={() => {
             setData([])
         }}>
          Clear results

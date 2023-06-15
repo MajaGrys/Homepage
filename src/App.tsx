@@ -10,7 +10,6 @@ import './App.scss';
 
 export default function App() {
   const Contact = React.lazy(() => import('./components/Contact'));
-
   return (
     <>
     <div id='sidebar'><SidebarContent /></div>

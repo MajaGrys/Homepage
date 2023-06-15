@@ -7,13 +7,22 @@ export default function Skills() {
         <section id="skills" className="three">
         <div className="container">
           <header>
-            <Slide duration={2000}>
+            <Slide duration={2000} triggerOnce>
             <h2>Skills</h2>
             </Slide>
           </header>
           
-            <Icon as={CheckCircleIcon} color='purple.400' />
-            <Bounce cascade damping={0.1} triggerOnce> HTML CSS JavaScript React TypeScript Git Responsive design</Bounce>
+          <span id='skillsList'>
+            <Bounce cascade damping={0.1}> {/* triggerOnce */}
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> HTML</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />CSS</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />JavaScript</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />React</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />TypeScript</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />Git</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' />Responsive design</span>
+            </Bounce>
+          </span>
 
         </div>
       </section>

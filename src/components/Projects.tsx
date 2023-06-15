@@ -14,7 +14,7 @@ export default function Projects() {
         <div className="container">
 
           <header>
-            <Slide duration={2000}>
+            <Slide duration={2000} triggerOnce>
             <h2>Projects</h2>
             </Slide>
           </header>
