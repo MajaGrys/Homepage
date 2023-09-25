@@ -20,13 +20,6 @@ export interface chatGPTResponse {
         ]
 }
 
-interface MailData {
-  contactName: string,
-  contactEmail: string,
-  contactTopic: string,
-  contactMessage: string
-}
-
 export class Provider {
     private getDefaultOpenAIOptions = (message: string) => ({  
         method: 'POST',
@@ -39,17 +32,6 @@ export class Provider {
           {model: 'gpt-3.5-turbo',messages: [{'role': 'user', content: message}]}
         )
         })
-
-    public async sendMailData (mailData: MailData) {
-      const options:RequestInit = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(mailData)}
-
-       return fetch('/homepage/ajaxmail.php', options)
-    }
 
     public async getOpenAIData(
         message: string,

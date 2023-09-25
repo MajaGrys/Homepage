@@ -13,14 +13,14 @@ export default function Skills() {
           </header>
           
           <span id='skillsList'>
-            <Bounce cascade damping={0.1}> {/* triggerOnce */}
+            <Bounce cascade damping={0.1}>
             <span><Icon as={CheckCircleIcon} color='purple.400' /> HTML</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />CSS</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />JavaScript</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />React</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />TypeScript</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />Git</span>
-            <span><Icon as={CheckCircleIcon} color='purple.400' />Responsive design</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> CSS</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> JavaScript</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> Responsive web design</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> Git</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> React</span>
+            <span><Icon as={CheckCircleIcon} color='purple.400' /> TypeScript</span>
             </Bounce>
           </span>
 

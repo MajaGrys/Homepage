@@ -8,6 +8,7 @@ import {
   DrawerCloseButton,
   useDisclosure
 } from '@chakra-ui/react';
+import avatar from '../assets/images/IMG_20230724_175635.jpg';
 
 interface AnchorButton {
   url: string;
@@ -81,7 +82,7 @@ export function SidebarContent() {
                 <Image
                 borderRadius='full'
                 boxSize='150px'
-                src='https://bit.ly/dan-abramov'
+                src={avatar}
                 alt='Maja Grys' />
             </span>
 
@@ -98,9 +99,8 @@ export function SidebarContent() {
 
         <div className="bottom">
         <ul className="icons">
-          <li><a href="https://github.com/MajaGrys" className="icon brands fa-github"><span className="label">Github</span></a></li>
-          <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-          <li><a href="#" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
+          <li><a href="https://github.com/MajaGrys" className="icon brands fa-github" target="_blank"><span className="label">Github</span></a></li>
+          <li><a href="mailto:majagrys@wp.pl" className="icon solid fa-envelope" target="_blank"><span className="label">Email</span></a></li>
         </ul>
         </div>
       </div>

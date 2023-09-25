@@ -38,10 +38,6 @@
 
 //Skills
 
-// #skills p {
-//     line-height: 2;
-// }
-
 #skillsList {
     line-height: 1.5;
 }
@@ -52,13 +48,19 @@
     border: 1px solid black;
 }
 
+.tabPanel p {
+    max-width: 1000px;
+}
+
 //Chatbot
 
 #chatInput {
     width: 50%;
+    padding: 10px;
 }
 
 #clearInput {
- color: #888 !important;
- margin: -20px;
+    color: #888 !important;
+    margin: -30px;
+    padding: 10px;
 }
