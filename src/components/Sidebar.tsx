@@ -54,7 +54,7 @@ export default function Sidebar() {
   return (
     <> 
       <div id="headerToggle">
-				<a href="#header" className="toggle" onClick={handleClick}></a>
+				<a className="toggle" onClick={handleClick}></a>
 			</div>
 
       <Drawer
