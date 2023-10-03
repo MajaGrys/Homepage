@@ -9,7 +9,7 @@
         width: 100%;
     }
     
-    #sidebar {
+    #sidebarContent {
         display: none;
     }
 }
@@ -37,9 +37,19 @@
 }
 
 //Skills
+#laptopImg {
+    height: 40vh;
+    position: absolute;
+}
 
 #skillsList {
-    line-height: 1.5;
+    line-height: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    #laptopImg {
+        display: none;
+    }
 }
 
 //Projects

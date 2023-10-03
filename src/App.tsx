@@ -6,13 +6,13 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ChatGPT from './components/ChatGPT';
 import './assets/css/main.css';
-import './App.scss';
+import './assets/css/App.scss';
 
 export default function App() {
   const Contact = React.lazy(() => import('./components/Contact'));
   return (
     <>
-    <div id='sidebar'><SidebarContent /></div>
+    <div id='sidebarContent'><SidebarContent /></div>
     <Sidebar />
     <div id="main">
     <About />

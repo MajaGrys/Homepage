@@ -1,6 +1,7 @@
 import { Slide, Bounce } from "react-awesome-reveal";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { Icon } from "@chakra-ui/react";
+import laptop from '../assets/images/laptop.png'
 
 export default function Skills() {
     return (
@@ -11,7 +12,7 @@ export default function Skills() {
             <h2>Skills</h2>
             </Slide>
           </header>
-          
+          <img src={laptop} alt='A cosy workspace' id='laptopImg' />
           <span id='skillsList'>
             <Bounce cascade damping={0.1}>
             <span><Icon as={CheckCircleIcon} color='purple.400' /> HTML</span>

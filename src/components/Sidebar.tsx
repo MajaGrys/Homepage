@@ -26,9 +26,10 @@ const menuConfig:AnchorButton[] = [
           
 const SidebarButton:FC<AnchorButton> = (props) => {
   const {url, additionalClassName, text} = props;
-  const onClick = (e:React.MouseEvent) => onButtonClick(e, url) 
   return (
-    <li key={url}><a href={url} onClick={onClick}><span className={`icon solid ${additionalClassName}`}>{text}</span></a></li>
+    <li key={url}><a href={url} onClick={
+      (e:React.MouseEvent) => onButtonClick(e, url)
+    }><span className={`icon solid ${additionalClassName}`}>{text}</span></a></li>
   )
 }
 
@@ -44,7 +45,6 @@ const onButtonClick = (e:React.MouseEvent, url:string) => {
 
 export default function Sidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.createRef<HTMLDivElement>()
   const [isToggled, setIsToggled] = useState(false)
   const handleClick = () => {
     isToggled ? onClose() : onOpen()
@@ -53,7 +53,7 @@ export default function Sidebar() {
 
   return (
     <> 
-      <div id="headerToggle" ref={btnRef}>
+      <div id="headerToggle">
 				<a href="#header" className="toggle" onClick={handleClick}></a>
 			</div>
 
@@ -61,9 +61,8 @@ export default function Sidebar() {
         isOpen={isOpen}
         placement='left'
         onClose={onClose}
-        finalFocusRef={btnRef}
       >
-        <DrawerOverlay onClick={onClose} />
+        <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
           <SidebarContent />
