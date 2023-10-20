@@ -1,3 +1,3 @@
-# Homepage
+# Portfolio
 
-This project presents my portfolio, including my skills and completed websites. It was created using React, TypeScript and Chakra UI.
+This project was created during a 2-week internship in collaboration with my mentor. During the development of this project I had the opportunity to get familiar with React, Typescript, npm and Chakra UI.
