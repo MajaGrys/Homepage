@@ -41,19 +41,19 @@ body {
 }
 
 //Skills
-#laptopImg {
-    height: 40vh;
-    position: absolute;
-}
 
 #skillsList {
     line-height: 2;
-}
 
-@media screen and (max-width: 1200px) {
-    #laptopImg {
-        display: none;
+    ul {
+        max-width: 800px;
+        margin: auto;
     }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }    
 }
 
 //Projects

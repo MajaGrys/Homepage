@@ -11,7 +11,7 @@ export default function About() {
           </Slide>
           </header>
 
-          <Slide delay={1000} duration={4000} triggerOnce={true} direction='right'>
+          <Slide duration={4000} triggerOnce={true} direction='right'>
           <p>I'm Maja, I create websites.</p>
           </Slide>
 

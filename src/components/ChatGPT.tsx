@@ -49,7 +49,7 @@ export default function ChatGPT() {
             </header>
             <s>Below you can have a conversation with a chatbot implemented using OpenAI API. <br />
             Your message should be longer than 3 characters.</s>
-            <p>The chatbot no longer responds due to the end of the free period.</p>
+            <p>The chatbot no longer responds due to the end of the OpenAI API's free period.</p>
 
         <input id='chatInput' placeholder="Type your message" onChange={handleChange} ref={inputRef}></input>
         

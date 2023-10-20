@@ -12,12 +12,12 @@ import avatar from '../assets/images/IMG_20230724_175635.jpg';
 
 interface AnchorButton {
   url: string;
-  additionalClassName?: string;
+  additionalClassName: string;
   text: string;
 }
 
 const menuConfig:AnchorButton[] = [
-  {url: '#about', additionalClassName: 'fa-user', text: 'About Me'},
+  {url: '#about', additionalClassName: '', text: 'Home'},
   {url: '#skills', additionalClassName: 'fa-th', text: 'Skills'},
   {url: '#projects', additionalClassName: 'fa-home', text: 'Projects'},
   {url: '#contact', additionalClassName: 'fa-envelope', text: 'Contact'},
