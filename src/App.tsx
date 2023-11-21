@@ -18,11 +18,11 @@ export default function App() {
     <GridItem colSpan={{ base: 12, md: 9, xl: 10 }}>
     <main>
     <Routes>
-      <Route path='/' element={<About />} />
-      <Route path='/skills' element={<Skills />} />
-      <Route path='/projects' element={<Projects />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/chat' element={<ChatGPT />} />
+      <Route path='' element={<About />} />
+      <Route path='skills' element={<Skills />} />
+      <Route path='projects' element={<Projects />} />
+      <Route path='contact' element={<Contact />} />
+      <Route path='chat' element={<ChatGPT />} />
     </Routes>
     </main>
     </GridItem>

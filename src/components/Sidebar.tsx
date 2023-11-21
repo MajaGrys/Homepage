@@ -2,7 +2,7 @@ import '../assets/css/Sidebar.scss';
 import { FiHome, FiCompass, FiTrello, FiAtSign, FiMessageSquare } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { Icon } from '@chakra-ui/icons';
-import { Box, Divider } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import avatar from '../assets/images/IMG_20230724_175635.jpg';
 
 interface LinkItemsProps {
@@ -12,11 +12,11 @@ interface LinkItemsProps {
 }
 
 const LinkItems: Array<LinkItemsProps> = [
-    {url: '/', name: 'About', icon: FiHome},
-    {url: '/skills', name: 'Skills', icon: FiCompass},
-    {url: '/projects', name: 'Projects', icon: FiTrello},
-    {url: '/contact', name: 'Contact', icon: FiAtSign},
-    {url: '/chat', name: 'Chat with AI', icon: FiMessageSquare}
+    {url: '#', name: 'About', icon: FiHome},
+    {url: '#skills', name: 'Skills', icon: FiCompass},
+    {url: '#projects', name: 'Projects', icon: FiTrello},
+    {url: '#contact', name: 'Contact', icon: FiAtSign},
+    {url: '#chat', name: 'Chat with AI', icon: FiMessageSquare}
 ]
 
 export default function Sidebar() {
