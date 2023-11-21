@@ -1,0 +1,9 @@
+#skillsList ul {
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
