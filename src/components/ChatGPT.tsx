@@ -1,7 +1,7 @@
 import Provider, {chatGPTResponse} from '../provider/mainDataProvider';
 import { createRef, useState } from "react";
-import { Slide } from "react-awesome-reveal";
 import { Button } from "@chakra-ui/react";
+import '../assets/css/ChatGPT.scss';
 
 export default function ChatGPT() {
     const [data, setData] = useState<chatGPTResponse[]>([])
@@ -39,17 +39,10 @@ export default function ChatGPT() {
     const hasData = !!data.length
 
     return (
-        <>
-        <section id="chat" className="two">
-        <div className="container">
-          <header>
-            <Slide duration={2000} triggerOnce>
+        <section id="chat">
             <h2>Chat with AI</h2>
-            </Slide>
-            </header>
-            <s>Below you can have a conversation with a chatbot implemented using OpenAI API. <br />
-            Your message should be longer than 3 characters.</s>
-            <p>The chatbot no longer responds due to the end of the OpenAI API's free period.</p>
+            <s>Below you can have a conversation with a chatbot implemented using OpenAI API.</s>
+            <p>The chatbot no longer responds due to the end of the OpenAI API's free period. Sorry!</p>
 
         <input id='chatInput' placeholder="Type your message" onChange={handleChange} ref={inputRef}></input>
         
@@ -71,8 +64,6 @@ export default function ChatGPT() {
          </Button>
         }
         
-        </div>
         </section>
-        </>
     )
 }

@@ -1,80 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&display=swap');
+
+:root {
+    --bg-color: #f2eeff;
+    --purple: #9c7be8;
+    --purple-dark: #533D98;
+    --purple-darker: #322659;
+    --purple-light: #E8D6F9;
+    --nav-font: 'Dosis', sans-serif;
+    --h2-font: 'Dancing Script', cursive;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     cursor: default;
+    font-size: large;
 }
 
-//Sidebar
-#nav ul li span:hover {
-    color: #b794f4;
+main {
+    padding: 50px;
+    overflow: auto;
+    background-color: var(--bg-color);
 }
 
-
-@media screen and (max-width: 960px) {
-    #header {
-        width: 100%;
-    }
-    
-    #sidebarContent {
-        display: none;
-    }
+h1 {
+    font-size: xx-large;
 }
 
-//About Me
-#about {
-    max-height: 60vh;
+h2 {
+    font-size: 4em;
+    font-family: var(--h2-font);
+    color: var(--purple-darker);
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--purple);
 }
 
-#about header {
-    font-size: 8vh;
-    font-family: 'Parisienne', cursive;
-    color: black;
-    margin-top: -6vh;
-    margin-left: -25vw;
-    margin-bottom: 0px;
-    color: black;
-    text-shadow: 1px 1px white;
-}
-
-#about p {
-    font-size: 4vh;
-    margin-top: -5vh;
-    color: black;
-}
-
-//Skills
-
-#skillsList {
-    line-height: 2;
-
-    ul {
-        max-width: 800px;
-        margin: auto;
+@media screen and (min-width: 768px) {
+    main {
+        height: 100vh;
     }
 
-    li {
-        list-style-type: none;
-        display: inline-block;
-    }    
-}
-
-//Projects
-
-#projects img {
-    border: 1px solid black;
-}
-
-.tabPanel p {
-    max-width: 1000px;
-}
-
-//Chatbot
-
-#chatInput {
-    width: 50%;
-    padding: 10px;
-}
-
-#clearInput {
-    color: #888 !important;
-    margin: -30px;
-    padding: 10px;
+    body {
+        font-size: x-large;
+    }
 }

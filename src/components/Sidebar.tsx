@@ -1,107 +1,58 @@
-import React from 'react';
-import { FC, useState } from 'react';
-import { Image } from '@chakra-ui/react';
-import {
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  useDisclosure
-} from '@chakra-ui/react';
+import '../assets/css/Sidebar.scss';
+import { FiHome, FiCompass, FiTrello, FiAtSign, FiMessageSquare } from 'react-icons/fi';
+import { IconType } from 'react-icons';
+import { Icon } from '@chakra-ui/icons';
+import { Box, Divider } from '@chakra-ui/react';
 import avatar from '../assets/images/IMG_20230724_175635.jpg';
 
-interface AnchorButton {
-  url: string;
-  additionalClassName: string;
-  text: string;
+interface LinkItemsProps {
+    url: string,
+    name: string,
+    icon: IconType
 }
 
-const menuConfig:AnchorButton[] = [
-  {url: '#about', additionalClassName: '', text: 'Home'},
-  {url: '#skills', additionalClassName: 'fa-th', text: 'Skills'},
-  {url: '#projects', additionalClassName: 'fa-home', text: 'Projects'},
-  {url: '#contact', additionalClassName: 'fa-envelope', text: 'Contact'},
-  {url: '#chat', additionalClassName: 'fa-user', text: 'Chat with AI'}
+const LinkItems: Array<LinkItemsProps> = [
+    {url: '/', name: 'About', icon: FiHome},
+    {url: '/skills', name: 'Skills', icon: FiCompass},
+    {url: '/projects', name: 'Projects', icon: FiTrello},
+    {url: '/contact', name: 'Contact', icon: FiAtSign},
+    {url: '/chat', name: 'Chat with AI', icon: FiMessageSquare}
 ]
-          
-const SidebarButton:FC<AnchorButton> = (props) => {
-  const {url, additionalClassName, text} = props;
-  return (
-    <li key={url}><a href={url} onClick={
-      (e:React.MouseEvent) => onButtonClick(e, url)
-    }><span className={`icon solid ${additionalClassName}`}>{text}</span></a></li>
-  )
-}
-
-const onButtonClick = (e:React.MouseEvent, url:string) => {
-  e.preventDefault()
-  const scrollTo = document.querySelector(url)
-  if (scrollTo) {
-    scrollTo.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
-}
 
 export default function Sidebar() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const [isToggled, setIsToggled] = useState(false)
-  const handleClick = () => {
-    isToggled ? onClose() : onOpen()
-    setIsToggled(!isToggled)
-  }
-
-  return (
-    <> 
-      <div id="headerToggle">
-				<a className="toggle" onClick={handleClick}></a>
-			</div>
-
-      <Drawer
-        isOpen={isOpen}
-        placement='left'
-        onClose={onClose}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <SidebarContent />
-        </DrawerContent>
-      </Drawer>
-    </>)
-}
-
-export function SidebarContent() {
     return (
-      <div id="header">
-        <div className="top">
-          <div id="logo">
+        <nav>
+            <div id='card'>
+                <img src={avatar} id='avatar' alt='' />
+                <figcaption>
+                    <h1>Maja Grys</h1>
+                    <h3>Frontend Developer</h3>
+                </figcaption>
+            </div>
 
-            <span className="image avatar48">
-                <Image
-                borderRadius='full'
-                boxSize='150px'
-                src={avatar}
-                alt='Maja Grys' />
-            </span>
-
-            <h1 id="title">Maja Grys</h1>
-            <p>Frontend developer</p>
-          </div>
-    
-          <nav id="nav">
-            <ul>
-              {menuConfig.map(configElement => SidebarButton(configElement))}
-            </ul>
-          </nav>
-        </div>
-
-        <div className="bottom">
-        <ul className="icons">
-          <li><a href="https://github.com/MajaGrys" className="icon brands fa-github" target="_blank"><span className="label">Github</span></a></li>
-          <li><a href="mailto:majagrys@wp.pl" className="icon solid fa-envelope" target="_blank"><span className="label">Email</span></a></li>
-        </ul>
-        </div>
-      </div>
-    );
-  }
+            {LinkItems.map(link => {
+                return (
+                <Box
+                as="a"
+                href={link.url}
+                key={link.name}
+                p={{ base: '10px', md: '20px' }}
+                color='purple.900'
+                transition='0.5s'
+                border='1px'
+                borderColor='purple.400'
+                borderBottomColor='purple.900'
+                _hover={{ bg: 'purple.700', color: 'purple.100', borderColor: 'purple.900', borderRadius: 'xl' }}
+                >
+                    <Icon
+                    as={link.icon}
+                    fontSize="16"
+                    mr={{ base: '2', md: '5' }} />
+                    {link.name}
+                    
+                </Box>
+                )
+            })}
+        </nav>
+    )
+}

@@ -1,21 +1,8 @@
-import { Slide } from "react-awesome-reveal";
-
-export default function About() {
+export default function Home() {
     return (
-        <section id="about" className="one dark cover">
-        <div className="container">
-
-          <header>
-          <Slide duration={3000} triggerOnce={true}>
-            <h2>Hello</h2>
-          </Slide>
-          </header>
-
-          <Slide duration={4000} triggerOnce={true} direction='right'>
-          <p>I'm Maja, I create websites.</p>
-          </Slide>
-
-        </div>
-      </section>
+        <section id='about'>
+            <h2>About</h2>
+            <p>To do</p>
+        </section>
     )
 }
