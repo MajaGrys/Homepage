@@ -13,12 +13,13 @@ export default function App() {
   return (
     <Grid templateColumns='repeat(12, 1fr)'>
 
-    <GridItem colSpan={{ base: 12, md: 3, xl: 2 }} ><Sidebar /></GridItem>
+    <GridItem colSpan={{ base: 12, md: 3, xl: 2 }}><Sidebar /></GridItem>
 
     <GridItem colSpan={{ base: 12, md: 9, xl: 10 }}>
     <main>
     <Routes>
       <Route path='' element={<About />} />
+      <Route path='about' element={<About />} />
       <Route path='skills' element={<Skills />} />
       <Route path='projects' element={<Projects />} />
       <Route path='contact' element={<Contact />} />

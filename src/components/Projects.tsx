@@ -17,14 +17,14 @@ export default function Projects() {
       <section id="projects">
         <h2>Projects</h2>
 
-        <Tabs isFitted variant='soft-rounded' align='center' colorScheme='purple'>
+        <Tabs isFitted variant='soft-rounded' align='center'>
           <TabList>
             <Wrap>
-            <Tab color='gray.700' as='span' fontSize={20} _hover={{bg: 'purple.300', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.400' }}>EventFinder</Tab>
-            <Tab color='gray.700' as='span' fontSize={20} _hover={{bg: 'purple.300', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.400' }}>Portfolio website</Tab>
-            <Tab color='gray.700' as='span' fontSize={20} _hover={{bg: 'purple.300', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.400' }}>SearchOnce</Tab>
-            <Tab color='gray.700' as='span' fontSize={20} _hover={{bg: 'purple.300', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.400' }}>Random Facts</Tab>
-            <Tab color='gray.700' as='span' fontSize={20} _hover={{bg: 'purple.300', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.400' }}>Van Gogh's Gallery</Tab>
+            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>EventFinder</Tab>
+            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Portfolio website</Tab>
+            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>SearchOnce</Tab>
+            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Random Facts</Tab>
+            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Van Gogh's Gallery</Tab>
             </Wrap>
           </TabList>
           

@@ -12,7 +12,7 @@ interface LinkItemsProps {
 }
 
 const LinkItems: Array<LinkItemsProps> = [
-    {url: '#', name: 'About', icon: FiHome},
+    {url: '#about', name: 'About', icon: FiHome},
     {url: '#skills', name: 'Skills', icon: FiCompass},
     {url: '#projects', name: 'Projects', icon: FiTrello},
     {url: '#contact', name: 'Contact', icon: FiAtSign},

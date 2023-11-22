@@ -5,3 +5,12 @@
 .tabPanel p {
     max-width: 1000px;
 }
+
+#projects a {
+    color: var(--purple-dark);
+    transition: 0.5s;
+
+    &:hover {
+        color: var(--purple);
+    }
+}
