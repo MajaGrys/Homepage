@@ -10,7 +10,7 @@ export default function ChatGPT() {
     
     let debounceTimeout = 0;
 
-    const handleChange = (event: any) => {// todo 
+    const handleChange = (event: any) => {
         if (event.target.value.length < 3) {
             return
         }
@@ -42,7 +42,7 @@ export default function ChatGPT() {
         <section id="chat">
             <h2>Chat with AI</h2>
             <s>Below you can have a conversation with a chatbot implemented using OpenAI API.</s>
-            <p>The chatbot no longer responds due to the end of the OpenAI API's free period. Sorry!</p>
+            <p>The chatbot no longer responds due to the end of the OpenAI API's free period. Sorry! 😔</p>
 
         <input id='chatInput' placeholder="Type your message" onChange={handleChange} ref={inputRef}></input>
         
