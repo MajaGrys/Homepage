@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&family=Orbitron&family=Quicksand&display=swap');
 
 :root {
     --bg-color: #f2eeff;
@@ -6,7 +6,9 @@
     --purple-dark: #533D98;
     --purple-darker: #322659;
     --purple-light: #E8D6F9;
+    --default-font: 'Quicksand', sans-serif;
     --nav-font: 'Dosis', sans-serif;
+    --header-font: 'Orbitron', sans-serif;
     --h2-font: 'Dancing Script', cursive;
 }
 
@@ -16,19 +18,17 @@
     padding: 0;
 }
 
-body {
+html {
     cursor: default;
-    font-size: large;
+    background-color: var(--bg-color);
+    font-size: x-large;
 }
 
 main {
     padding: 50px;
-    overflow: auto;
     background-color: var(--bg-color);
-}
-
-h1 {
-    font-size: xx-large;
+    font-family: var(--default-font);
+    overflow: auto;
 }
 
 h2 {
@@ -43,9 +43,5 @@ h2 {
 @media screen and (min-width: 768px) {
     main {
         height: 100vh;
-    }
-
-    body {
-        font-size: x-large;
     }
 }

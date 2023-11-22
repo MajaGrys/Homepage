@@ -1,0 +1,44 @@
+#about a, #location a, #mail a {
+    color: var(--purple-dark);
+    transition: 0.5s;
+
+    &:hover {
+        color: var(--purple);
+    }
+}
+
+#about-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#about-links {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#location, #mail, #phone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+}
+
+#phone :first-child {
+    color: var(--purple-dark);
+}
+
+#location :first-child {
+    transform: translateY(2px);
+}
+
+#mail :first-child {
+    transform: translateY(3.5px);
+}
+
+#phone :first-child {
+    transform: translateY(4px);
+}
