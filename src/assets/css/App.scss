@@ -21,7 +21,7 @@
 html {
     cursor: default;
     background-color: var(--bg-color);
-    font-size: x-large;
+    font-size: large;
 }
 
 main {
@@ -32,7 +32,7 @@ main {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-family: var(--h2-font);
     color: var(--purple-darker);
     text-align: center;
@@ -40,8 +40,18 @@ h2 {
     border-bottom: 1px solid var(--purple);
 }
 
+@media screen and (min-width: 400px) {
+    html {
+        font-size: x-large;
+    }
+}
+
 @media screen and (min-width: 768px) {
     main {
         height: 100vh;
+    }
+
+    h2 {
+        font-size: 4em;
     }
 }

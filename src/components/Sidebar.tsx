@@ -36,19 +36,18 @@ export default function Sidebar() {
                 as="a"
                 href={link.url}
                 key={link.name}
-                p={{ base: '10px', md: '20px' }}
+                p={{ base: '10px', sm: '20px' }}
                 color='purple.900'
                 transition='0.5s'
-                border='1px'
-                borderColor='purple.400'
-                borderBottomColor='purple.900'
+                borderBottom='1px'
+                borderBottomColor={{ base: 'purple.400', sm: 'purple.900' }}
                 _hover={{ bg: 'purple.700', color: 'purple.100', borderColor: 'purple.900', borderRadius: 'xl' }}
                 >
                     <Icon
                     as={link.icon}
-                    fontSize="16"
-                    mr={{ base: '2', md: '5' }} />
-                    {link.name}
+                    fontSize={{ base: '26', sm: '16' }}
+                    mr={{ base: '0', sm: '5' }} />
+                    <span className='link-name'>{link.name}</span>
                     
                 </Box>
                 )
