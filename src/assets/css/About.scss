@@ -1,3 +1,8 @@
+@keyframes moveIn {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(0); }
+}
+
 #about a, #location a, #mail a {
     color: var(--purple-dark);
     transition: 0.5s;
@@ -12,6 +17,31 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+
+    & > :first-child {
+        animation: moveIn 2s backwards;
+        animation-delay: 0.2s;
+    }
+
+    & > :nth-child(2) {
+        animation: moveIn 2s backwards;
+        animation-delay: 1s;
+
+    }
+}
+
+#about-avatar {
+    border: 1px solid var(--purple-darker);
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px var(--purple-dark);
+    width: 200px;
+    margin: 0 auto 30px auto;
+}
+
+@media screen and (min-width: 1126px) and (min-height: 800px)  {
+    #about-avatar {
+        display: none;
+    }
 }
 
 #about-links {

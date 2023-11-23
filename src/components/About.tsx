@@ -1,6 +1,7 @@
 import { Card, CardBody } from "@chakra-ui/react";
 import { FaLocationDot, FaEnvelope, FaSquarePhone, FaGithub, FaLinkedin } from "react-icons/fa6";
 import '../assets/css/About.scss';
+import avatar from '../assets/images/IMG_20230724_175635.jpg';
 
 export default function Home() {
     return (
@@ -9,8 +10,10 @@ export default function Home() {
             <div id='about-cards'>
                 <Card width='md'>
                     <CardBody>
+                        <img src={avatar} id='about-avatar' alt='' />
                         <p>Hello, I'm Maja! 👋</p>
                         <p>I'm a frontend developer specializing in React.</p>
+                        <p>I love exploring and creating 🚀</p>
                     </CardBody>
                 </Card>
 
