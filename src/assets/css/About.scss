@@ -3,15 +3,6 @@
     to { transform: translateX(0); }
 }
 
-#about a, #location a, #mail a {
-    color: var(--purple-dark);
-    transition: 0.5s;
-
-    &:hover {
-        color: var(--purple);
-    }
-}
-
 #about-cards {
     display: flex;
     justify-content: center;
@@ -20,12 +11,11 @@
 
     & > :first-child {
         animation: moveIn 2s backwards;
-        animation-delay: 0.2s;
     }
 
     & > :nth-child(2) {
         animation: moveIn 2s backwards;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
 
     }
 }
