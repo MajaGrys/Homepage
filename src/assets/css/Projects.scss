@@ -1,16 +1,43 @@
-#projects img {
-    border: 1px solid var(--purple-darker);
-}
-
-.tabPanel p {
+.projects-items {
+    margin: auto;
     max-width: 1000px;
+    transition: 1s;
 }
 
-#projects a {
-    color: var(--purple-dark);
-    transition: 0.5s;
+.projects-items img {
+    border: 1px solid var(--purple-darker);
+    max-height: 500px;
+    margin: auto;
+}
 
-    &:hover {
-        color: var(--purple);
+.live-demo {
+    padding: 18px 15px;
+}
+
+.projects-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        display: none;
+    }
+
+    .projects-items:hover {
+        img {
+            transition: 1s;
+            opacity: 0.5;
+        }
+    
+        .projects-buttons {
+            display: flex;
+        }
     }
 }

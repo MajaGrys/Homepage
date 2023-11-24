@@ -40,7 +40,7 @@ export default function Sidebar() {
                 color='purple.900'
                 transition='0.5s'
                 borderBottom='1px'
-                borderBottomColor={{ base: 'purple.400', sm: 'purple.900' }}
+                borderBottomColor={{ base: 'transparent', sm: 'purple.900' }}
                 _hover={{ bg: 'purple.700', color: 'purple.100', borderColor: 'purple.900', borderRadius: 'xl' }}
                 >
                     <Icon

@@ -1,3 +1,8 @@
+.form-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
 form {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -19,14 +24,6 @@ input, textarea {
 
 input[type='submit'] {
     grid-column: 3 / 5;
-    background-color: var(--purple-dark);
-    color: var(--purple-light);
-    cursor: pointer;
-    transition: 0.5s;
-
-    &:hover {
-        background-color: var(--purple-darker);
-    }
 }
 
 @media screen and (min-width: 380px) {

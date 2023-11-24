@@ -1,32 +1,42 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Wrap } from '@chakra-ui/react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import '../assets/css/Projects.scss';
-import ModalImage from 'react-modal-image';
-import EF from '../assets/images/event_finder.png';
-import EF_small from '../assets/images/event_finder_small.png';
-import Portfolio from '../assets/images/portfolio.png';
-import Portfolio_small from '../assets/images/portfolio_small.png';
-import SO from '../assets/images/searchOnce.png';
-import SO_small from '../assets/images/searchOnce_small.png';
-import RF from '../assets/images/randomFacts.png';
-import RF_small from '../assets/images/randomFacts_small.png';
-import VG from '../assets/images/vanGogh.png';
-import VG_small from '../assets/images/vanGogh_small.png';
+import EventFinderImg from '../assets/images/EventFinderImg.png';
+import PortfolioImg from '../assets/images/PortfolioImg.png';
+import SearchOnceImg from '../assets/images/SearchOnceImg.png';
+import RandomFactsImg from '../assets/images/RandomFactsImg.png';
+import VanGoghImg from '../assets/images/VanGoghImg.png';
 
 export default function Projects() {
+    const projects = [
+      { name: 'EventFinder', img: EventFinderImg, url: 'https://majagrys.github.io/Event-Finder/', description: 'one' },
+      { name: 'Portfolio', img: PortfolioImg, url: 'https://majagrys.github.io/Portfolio/', description: 'two' },
+      { name: 'SearchOnce', img: SearchOnceImg, url: 'https://nlp-ug-2021-22.github.io/KreatywniInaczej-Project/', description: 'three' },
+      { name: 'RandomFacts', img: RandomFactsImg, url: 'https://majagrys.github.io/Random-Facts/', description: 'four' },
+      { name: 'Van Gogh Gallery', img: VanGoghImg, url: 'https://majagrys.github.io/Van-Gogh-Gallery/', description: 'five' }
+    ]
+
     return (
       <section id="projects">
         <h2>Projects</h2>
 
-        <Tabs isFitted variant='soft-rounded' align='center'>
-          <TabList>
-            <Wrap>
+        <Carousel responsive={{ desktop: { breakpoint: { max: 4000, min: 0 }, items: 1 }}}>
+          {projects.map(project => {
+            return (
+            <div className='projects-items'>
+              <img src={project.img} alt='' />
+              <div className='projects-buttons'>
+                {/* <button className='btn'>Description</button> */}
+                <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo</a>
+              </div>
+            </div>
+            )
+          })}
+        </Carousel>
+        
+
+        {/* 
             <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>EventFinder</Tab>
-            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Portfolio website</Tab>
-            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>SearchOnce</Tab>
-            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Random Facts</Tab>
-            <Tab as='span' color='gray.700' _hover={{bg: 'purple.400', cursor: 'pointer', color: 'white'}} _selected={{ color: 'white', bg: 'purple.700' }}>Van Gogh's Gallery</Tab>
-            </Wrap>
-          </TabList>
           
           <TabPanels>
           <TabPanel className='tabPanel'>
@@ -98,7 +108,7 @@ export default function Projects() {
             </TabPanel>
 
           </TabPanels>
-        </Tabs>
+        </Tabs> */}
       </section>            
     )
 }
