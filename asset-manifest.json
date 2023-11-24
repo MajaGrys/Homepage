@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d6a01abe.css",
-    "main.js": "/Portfolio/static/js/main.18f8e3ea.js",
+    "main.css": "/Portfolio/static/css/main.719dfc73.css",
+    "main.js": "/Portfolio/static/js/main.97f19ee6.js",
     "static/js/787.c096999d.chunk.js": "/Portfolio/static/js/787.c096999d.chunk.js",
-    "static/media/vanGogh.png": "/Portfolio/static/media/vanGogh.94bb6676ea638789f909.png",
-    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.1d2a5e0b8491cbe42629.png",
-    "static/media/event_finder.png": "/Portfolio/static/media/event_finder.49eeaa05b3032fff4693.png",
+    "static/media/VanGoghImg.png": "/Portfolio/static/media/VanGoghImg.7502409d4a1938f1a1e7.png",
+    "static/media/EventFinderImg.png": "/Portfolio/static/media/EventFinderImg.a6d35498d5d7d05a2af4.png",
+    "static/media/RandomFactsImg.png": "/Portfolio/static/media/RandomFactsImg.412b492e34c25449a966.png",
     "static/media/IMG_20230724_175635.jpg": "/Portfolio/static/media/IMG_20230724_175635.756666c9f5d79ae5c044.jpg",
-    "static/media/randomFacts.png": "/Portfolio/static/media/randomFacts.2a60f526045d07396fc9.png",
-    "static/media/vanGogh_small.png": "/Portfolio/static/media/vanGogh_small.182ce69a3c047df45950.png",
-    "static/media/portfolio_small.png": "/Portfolio/static/media/portfolio_small.c171ff13572629dc032a.png",
-    "static/media/event_finder_small.png": "/Portfolio/static/media/event_finder_small.22591788f21a83490077.png",
-    "static/media/searchOnce.png": "/Portfolio/static/media/searchOnce.28afc57ed7a202164fdd.png",
-    "static/media/randomFacts_small.png": "/Portfolio/static/media/randomFacts_small.dadf3b2f08c6bdcba1d5.png",
-    "static/media/searchOnce_small.png": "/Portfolio/static/media/searchOnce_small.c9facf03b23c7a2ead97.png",
+    "static/media/SearchOnceImg.png": "/Portfolio/static/media/SearchOnceImg.f563f7a2c2585b78f0ba.png",
+    "static/media/PortfolioImg.png": "/Portfolio/static/media/PortfolioImg.574f79073c69926b0817.png",
+    "static/media/revicons.eot": "/Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio/index.html",
-    "main.d6a01abe.css.map": "/Portfolio/static/css/main.d6a01abe.css.map",
-    "main.18f8e3ea.js.map": "/Portfolio/static/js/main.18f8e3ea.js.map",
+    "main.719dfc73.css.map": "/Portfolio/static/css/main.719dfc73.css.map",
+    "main.97f19ee6.js.map": "/Portfolio/static/js/main.97f19ee6.js.map",
     "787.c096999d.chunk.js.map": "/Portfolio/static/js/787.c096999d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6a01abe.css",
-    "static/js/main.18f8e3ea.js"
+    "static/css/main.719dfc73.css",
+    "static/js/main.97f19ee6.js"
   ]
 }
