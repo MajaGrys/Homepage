@@ -1,21 +1,53 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { IoIosArrowDropright } from "react-icons/io";
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure, Button } from '@chakra-ui/react';
 import '../assets/css/Projects.scss';
 import EventFinderImg from '../assets/images/EventFinderImg.png';
 import PortfolioImg from '../assets/images/PortfolioImg.png';
 import SearchOnceImg from '../assets/images/SearchOnceImg.png';
 import RandomFactsImg from '../assets/images/RandomFactsImg.png';
 import VanGoghImg from '../assets/images/VanGoghImg.png';
-import { IoIosArrowDropright } from "react-icons/io";
+
+interface ProjectProps {
+  name: string,
+  img: string,
+  url: string,
+  description: string
+}
 
 export default function Projects() {
-    const projects = [
+    const projects:Array<ProjectProps> = [
       { name: 'EventFinder', img: EventFinderImg, url: 'https://majagrys.github.io/Event-Finder/', description: 'one' },
       { name: 'Portfolio', img: PortfolioImg, url: 'https://majagrys.github.io/Portfolio/', description: 'two' },
       { name: 'SearchOnce', img: SearchOnceImg, url: 'https://nlp-ug-2021-22.github.io/KreatywniInaczej-Project/', description: 'three' },
       { name: 'RandomFacts', img: RandomFactsImg, url: 'https://majagrys.github.io/Random-Facts/', description: 'four' },
       { name: 'Van Gogh Gallery', img: VanGoghImg, url: 'https://majagrys.github.io/Van-Gogh-Gallery/', description: 'five' }
     ]
+
+    const ProjectModal = (project: { key: string, project: ProjectProps }) => {
+      const { isOpen, onOpen, onClose } = useDisclosure();
+      const { name, url, description } = project.project;
+    
+      return (
+      <>
+        <button className='btn project-description' onClick={onOpen}>
+          Description <IoIosArrowDropright size='30px' />
+        </button>
+
+        <Modal isOpen={isOpen} onClose={onClose} size='xl' >
+          <ModalOverlay />
+          <ModalContent mx='20px'>
+            <ModalHeader>{ name }</ModalHeader>
+            <ModalCloseButton color='purple.900' _hover={{ color: 'purple.400' }} />
+            <ModalBody>
+              { description }
+            </ModalBody>
+          </ModalContent>
+        </Modal>
+        </>
+      )
+    }
 
     return (
       <section id="projects">
@@ -24,10 +56,10 @@ export default function Projects() {
         <Carousel responsive={{ desktop: { breakpoint: { max: 4000, min: 0 }, items: 1 }}}>
           {projects.map(project => {
             return (
-            <div className='projects-items'>
+            <div className='projects-items' key={project.name}>
               <img src={project.img} alt='' />
               <div className='projects-buttons'>
-                {/* <button className='btn project-description'>Description <IoIosArrowDropright size='30px' /></button> */}
+                <ProjectModal key={project.name} project={project} />
                 <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo <IoIosArrowDropright size='30px' /></a>
               </div>
             </div>
