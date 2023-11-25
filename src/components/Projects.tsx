@@ -6,6 +6,7 @@ import PortfolioImg from '../assets/images/PortfolioImg.png';
 import SearchOnceImg from '../assets/images/SearchOnceImg.png';
 import RandomFactsImg from '../assets/images/RandomFactsImg.png';
 import VanGoghImg from '../assets/images/VanGoghImg.png';
+import { IoIosArrowDropright } from "react-icons/io";
 
 export default function Projects() {
     const projects = [
@@ -26,8 +27,8 @@ export default function Projects() {
             <div className='projects-items'>
               <img src={project.img} alt='' />
               <div className='projects-buttons'>
-                {/* <button className='btn'>Description</button> */}
-                <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo</a>
+                {/* <button className='btn project-description'>Description <IoIosArrowDropright size='30px' /></button> */}
+                <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo <IoIosArrowDropright size='30px' /></a>
               </div>
             </div>
             )
@@ -63,7 +64,9 @@ export default function Projects() {
                 hideDownload={true}
                 hideZoom={true}
               />
-              <p>Used: React, TypeScript, <a href='https://chakra-ui.com/' target="_blank">Chakra UI</a>, <a href='https://html5up.net/' target="_blank">HTML5UP</a>, <a href='https://www.npmjs.com/package/react-awesome-reveal' target="_blank">React Awesome Reveal</a>, <a href='https://www.npmjs.com/package/react-modal-image' target="_blank">react-modal-image</a>, <a href='https://web3forms.com/' target="_blank">Web3Forms</a>, <a href='https://openai.com/blog/openai-api' target="_blank">OpenAI API</a></p>
+              <p>Used: React, TypeScript, <a href='https://chakra-ui.com/' target="_blank">Chakra UI</a>, <a href='https://html5up.net/' target="_blank">HTML5UP</a>, <a href='https://www.npmjs.com/package/react-awesome-reveal' target="_blank">React Awesome Reveal</a>, <a href='https://web3forms.com/' target="_blank">Web3Forms</a>, <a href='https://openai.com/blog/openai-api' target="_blank">OpenAI API</a></p>
+
+              + <a href='https://www.npmjs.com/package/react-multi-carousel' target="_blank">react-multi-carousel</a>
             </TabPanel>
 
             <TabPanel className='tabPanel'>

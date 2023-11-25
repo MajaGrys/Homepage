@@ -4,11 +4,11 @@ nav {
     background-size: 100% 150%;
     border-bottom: 1px solid var(--purple-dark);
     box-shadow: 0px 0px 10px var(--purple);
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
     font-family: var(--nav-font);
 }
 
@@ -20,14 +20,8 @@ nav {
     }
 }
 
-@media screen and (max-width: 479px) {
-    .link-item {
-        border: none;
-    }
-
-    .link-name {
-        display: none;
-    }
+.link-name {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,6 +31,12 @@ nav {
         border-right: 1px solid var(--purple-dark);
         border-bottom: none;
         flex-wrap: nowrap;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .link-name {
+        display: inline;
     }
 }
 

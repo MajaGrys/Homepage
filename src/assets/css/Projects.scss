@@ -8,16 +8,43 @@
     border: 1px solid var(--purple-darker);
     max-height: 500px;
     margin: auto;
+    transition: 1s;
 }
 
-.live-demo {
-    padding: 18px 15px;
+.live-demo, .project-description {
+    display: flex;
+    align-items: center;
+
+    :first-child {
+        margin-left: 5px;
+    }
 }
 
 .projects-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.react-multi-carousel-list button {
+    background-color: var(--purple-darker);
+
+    &:hover {
+        background-color: var(--purple);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .react-multi-carousel-list button {
+        top: 10px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .react-multi-carousel-list button {
+        bottom: 10px;
+        padding: 19px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -27,17 +54,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 100;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
     }
 
     .projects-items:hover {
         img {
-            transition: 1s;
             opacity: 0.5;
         }
     
         .projects-buttons {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
         }
     }
 }
