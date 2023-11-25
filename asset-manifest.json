@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.719dfc73.css",
-    "main.js": "/Portfolio/static/js/main.97f19ee6.js",
+    "main.css": "/Portfolio/static/css/main.9365eb2f.css",
+    "main.js": "/Portfolio/static/js/main.209eadcc.js",
     "static/js/787.c096999d.chunk.js": "/Portfolio/static/js/787.c096999d.chunk.js",
     "static/media/VanGoghImg.png": "/Portfolio/static/media/VanGoghImg.7502409d4a1938f1a1e7.png",
     "static/media/EventFinderImg.png": "/Portfolio/static/media/EventFinderImg.a6d35498d5d7d05a2af4.png",
@@ -13,12 +13,12 @@
     "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio/index.html",
-    "main.719dfc73.css.map": "/Portfolio/static/css/main.719dfc73.css.map",
-    "main.97f19ee6.js.map": "/Portfolio/static/js/main.97f19ee6.js.map",
+    "main.9365eb2f.css.map": "/Portfolio/static/css/main.9365eb2f.css.map",
+    "main.209eadcc.js.map": "/Portfolio/static/js/main.209eadcc.js.map",
     "787.c096999d.chunk.js.map": "/Portfolio/static/js/787.c096999d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.719dfc73.css",
-    "static/js/main.97f19ee6.js"
+    "static/css/main.9365eb2f.css",
+    "static/js/main.209eadcc.js"
   ]
 }
