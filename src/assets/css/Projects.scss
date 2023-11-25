@@ -8,6 +8,7 @@
     border: 1px solid var(--purple-darker);
     max-height: 500px;
     margin: auto;
+    transition: 1s;
 }
 
 .live-demo {
@@ -27,17 +28,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 100;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
     }
 
     .projects-items:hover {
         img {
-            transition: 1s;
             opacity: 0.5;
         }
     
         .projects-buttons {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
         }
     }
 }
