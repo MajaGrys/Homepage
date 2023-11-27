@@ -11,7 +11,7 @@
     transition: 1s;
 }
 
-.live-demo, .project-description {
+.live-demo, .project-description-btn {
     display: flex;
     align-items: center;
 
@@ -24,9 +24,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0px 60px;
 }
 
-.react-multi-carousel-list button {
+.react-multi-carousel-list button:not(.project-description-btn) {
     background-color: var(--purple-darker);
 
     &:hover {
@@ -34,16 +35,33 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .react-multi-carousel-list button {
-        top: 10px;
+.project-description {
+    a {
+        color: var(--purple);
+        transition: 0.5s;
+    
+        &:hover {
+            color: var(--purple-darker);
+        }
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
-    .react-multi-carousel-list button {
-        bottom: 10px;
-        padding: 19px;
+
+@media screen and (max-width: 300px) {
+    .react-multi-carousel-list button:not(.project-description-btn) {
+        top: 5px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 595px) {
+    .react-multi-carousel-list button:not(.project-description-btn) {
+        bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 595px) and (max-width: 768px) and (orientation: landscape) {
+    .react-multi-carousel-list button:not(.project-description-btn) {
+        bottom: 25px;
     }
 }
 
