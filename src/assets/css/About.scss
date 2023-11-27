@@ -28,9 +28,17 @@
     margin: 0 auto 30px auto;
 }
 
+#about-website {
+    display: none;
+}
+
 @media screen and (min-width: 1126px) and (min-height: 800px)  {
     #about-avatar {
         display: none;
+    }
+
+    #about-website {
+        display: block;
     }
 }
 

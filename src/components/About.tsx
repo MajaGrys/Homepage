@@ -2,22 +2,24 @@ import { Card, CardBody } from "@chakra-ui/react";
 import { FaLocationDot, FaEnvelope, FaSquarePhone, FaGithub, FaLinkedin } from "react-icons/fa6";
 import '../assets/css/About.scss';
 import avatar from '../assets/images/IMG_20230724_175635.jpg';
+import website from '../assets/images/website.png';
 
 export default function Home() {
     return (
         <section id='about'>
             <h2>About</h2>
             <div id='about-cards'>
-                <Card width='md'>
+                <Card width={{ base: 'xs', xl: 'sm' }}>
                     <CardBody>
                         <img src={avatar} id='about-avatar' alt='' />
                         <p>Hello, I'm Maja! 👋</p>
                         <p>I'm a frontend developer specializing in React.</p>
                         <p>I love exploring and creating 🚀</p>
+                        <img src={website} id='about-website' alt='' />
                     </CardBody>
                 </Card>
 
-               <Card width='md'>
+               <Card width={{ base: 'xs', xl: 'sm' }} maxHeight={{ base: '700px', lg: '300px' }}>
                     <CardBody>
                         <div id='location'><a href="https://www.google.com/maps/place/Kwidzyn/@53.7204709,18.9039382,13z/data=!3m1!4b1!4m6!3m5!1s0x4702b0d59ad94955:0xec7032f22b47a281!8m2!3d53.7263529!4d18.9323043!16zL20vMDEzX3dy?entry=ttu" target="_blank" rel="noreferrer"><FaLocationDot size='28px' className="btn-link" /></a> Kwidzyn, Poland</div>
 
