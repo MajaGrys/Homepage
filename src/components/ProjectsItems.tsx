@@ -3,53 +3,133 @@ import PortfolioImg from '../assets/images/PortfolioImg.png';
 import SearchOnceImg from '../assets/images/SearchOnceImg.png';
 import RandomFactsImg from '../assets/images/RandomFactsImg.png';
 import VanGoghImg from '../assets/images/VanGoghImg.png';
+import { Badge, Tooltip } from '@chakra-ui/react'
 
 export interface ProjectsProps {
     name: string,
     img: string,
     url: string,
+    github: string,
     description?: React.JSX.Element
 }
 
 const EventFinder = () => {
     return (
     <div className='project-description'>
-        <p>A React app that allows users to search for interesting events in the vicinity of the chosen city. Design has been inspired by the <a href='https://bootstrapmade.com/append-bootstrap-website-template/' target="_blank" rel="noreferrer">Append</a> template.</p><br />
-        <p>Used: React, Redux, Axios, Bootstrap, <a href='https://developer.ticketmaster.com/products-and-docs/apis/getting-started/' target="_blank" rel="noreferrer">Discovery API</a>, <a href='https://www.npmjs.com/package/react-loader-spinner' target="_blank" rel="noreferrer">react-loader-spinner</a>, <a href='https://www.npmjs.com/package/react-zoom-pan-pinch' target="_blank" rel="noreferrer">react-zoom-pan-pinch</a></p>
+        <p>A React app that allows users to search for interesting events in the vicinity of the chosen city. The search may be narrowed using a keyword, a date and a category. In addition, the results can be sorted. When no events with the selected options are found, an error message is displayed. Users may use a map to check if EventFinder is available in their area.</p>
+        <p className='project-badges'>
+            <Badge colorScheme='purple'>React</Badge>
+            <Badge colorScheme='purple'>Redux</Badge>
+            <Badge colorScheme='purple'>Bootstrap</Badge>
+            <Badge colorScheme='purple'>Responsive</Badge>
+            <Badge colorScheme='purple'>Axios</Badge>
+            <Badge colorScheme='purple'>REST API</Badge>
+            <Badge colorScheme='purple'><a href='https://developer.ticketmaster.com/products-and-docs/apis/getting-started/' target="_blank" rel="noreferrer">Discovery API</a></Badge>
+            <Badge colorScheme='purple'><Tooltip label='react-loader-spinner and react-zoom-pan-pinch' bg='purple.400' hasArrow>npm packages</Tooltip></Badge>
+            <Badge colorScheme='purple'>Jest</Badge>
+            <Badge colorScheme='purple'>Cypress</Badge>
+        </p>
     </div>
     )
-  }
+}
+
+const Portfolio = () => {
+    return (
+        <div className='project-description'>
+            <p>This website has been created during a 2-week internship in collaboration with my mentor. It was a valuable experience because during the development of this project I used React, Typescript and npm for the first time. The website itself presents my skills and the projects I have completed. In addition, a contact form may be used to send me a message. We implemented a chatbot using OpenAI API as well, however, it no longer works due to the end of the API's free period.</p>
+            <p className='project-badges'>
+                <Badge colorScheme='purple'>React</Badge>
+                <Badge colorScheme='purple'>React Router</Badge>
+                <Badge colorScheme='purple'>Typescript</Badge>
+                <Badge colorScheme='purple'><a href='https://chakra-ui.com/' target="_blank">Chakra UI</a></Badge>
+                <Badge colorScheme='purple'>Responsive</Badge>
+                <Badge colorScheme='purple'><Tooltip label='react-awesome-reveal and react-multi-carousel' bg='purple.400' hasArrow>npm packages</Tooltip></Badge>
+                <Badge colorScheme='purple'><a href='https://web3forms.com/' target="_blank" rel="noreferrer">Web3Forms</a></Badge>
+                <Badge colorScheme='purple'>REST API</Badge>
+                <Badge colorScheme='purple'><a href='https://openai.com/blog/openai-api' target="_blank" rel="noreferrer">OpenAI API</a></Badge>
+                <Badge colorScheme='purple'>Git</Badge>
+            </p>
+        </div>
+    )
+}
+
+const SearchOnce = () => {
+    return (
+        <div className='project-description'>
+            <p>SearchOnce is a group project that has been completed during a web development course. It combines APIs of three dictionaries into a single word search application. In addition, dark mode is available. We applied agile methodologies such as scrum and kanban to organize our cooperation and git to manage the code of our application.</p>
+            <p className='project-badges'>
+                <Badge colorScheme='purple'>Javascript</Badge>
+                <Badge colorScheme='purple'><a href='https://bootswatch.com/flatly/' target="_blank" rel="noreferrer">Bootstrap</a></Badge>
+                <Badge colorScheme='purple'>Responsive</Badge>
+                <Badge colorScheme='purple'>REST API</Badge>
+                <Badge colorScheme='purple'><a href='https://dictionaryapi.com/' target="_blank" rel="noreferrer">Merriam-Webster Dictionary API</a></Badge>
+                <Badge colorScheme='purple'><a href='https://www.mediawiki.org/wiki/API:Main_page' target="_blank" rel="noreferrer">Wiktionary API</a></Badge>
+                <Badge colorScheme='purple'><a href='https://rapidapi.com/community/api/urban-dictionary' target="_blank" rel="noreferrer">Urban Dictionary API</a></Badge>
+                <Badge colorScheme='purple'>Agile</Badge>
+                <Badge colorScheme='purple'>Scrum</Badge>
+                <Badge colorScheme='purple'>Kanban</Badge>
+                <Badge colorScheme='purple'>Git</Badge>
+            </p>
+        </div>
+    )
+}
+
+const RandomFacts = () => {
+    return (
+        <div className='project-description'>
+            <p>Coming soon...</p>
+            <p className='project-badges'>
+            </p>
+        </div>
+    )
+}
+
+const VanGoghGallery = () => {
+    return (
+        <div className='project-description'>
+            <p>Coming soon...</p>
+            <p className='project-badges'>
+                <Badge colorScheme='purple'>.</Badge>
+            </p>
+        </div>
+    )
+}
 
 export const ProjectsItems:Array<ProjectsProps> = [
     { 
         name: 'EventFinder',
         img: EventFinderImg,
         url: 'https://majagrys.github.io/Event-Finder/',
+        github: 'https://github.com/MajaGrys/Event-Finder',
         description: <EventFinder />
     },
     { 
         name: 'Portfolio',
         img: PortfolioImg,
         url: 'https://majagrys.github.io/Portfolio/',
-        // description: 'two'
+        github: 'https://github.com/MajaGrys/Portfolio',
+        description: <Portfolio />
     },
     { 
         name: 'SearchOnce',
         img: SearchOnceImg,
         url: 'https://nlp-ug-2021-22.github.io/KreatywniInaczej-Project/',
-        // description: 'three'
+        github: 'https://github.com/NLP-UG-2021-22/KreatywniInaczej-Project',
+        description: <SearchOnce />
     },
     { 
         name: 'RandomFacts',
         img: RandomFactsImg,
         url: 'https://majagrys.github.io/Random-Facts/',
-        // description: 'four'
+        github: 'https://github.com/MajaGrys/Random-Facts',
+        description: <RandomFacts />
     },
     { 
         name: 'Van Gogh Gallery',
         img: VanGoghImg,
         url: 'https://majagrys.github.io/Van-Gogh-Gallery/',
-        // description: 'five'
+        github: 'https://github.com/MajaGrys/Van-Gogh-Gallery',
+        description: <VanGoghGallery />
     }
 ]
 
@@ -58,47 +138,6 @@ export const ProjectsItems:Array<ProjectsProps> = [
 
 
 /* 
-        <p>EventFinder is a React app that uses Ticketmaster Discovery API to allow users to search for events in the chosen city. A Bootstrap template was adapted into React. Redux was used for state management.</p>
-        
-        <ModalImage
-        small={EF_small}
-        large={EF}
-        alt="This is my portfolio website created in React."
-        hideDownload={true}
-        hideZoom={true}
-        />
-        <p>Used: React, Redux, Axios, Bootstrap, <a href='https://developer.ticketmaster.com/products-and-docs/apis/getting-started/' target="_blank">Discovery API</a>, <a href='https://www.npmjs.com/package/react-loader-spinner' target="_blank">react-loader-spinner</a>, <a href='https://www.npmjs.com/package/react-notifications' target="_blank">react-notifications</a></p>
-        <p>Deployed at <a href='https://majagrys.github.io/Event-Finder/' target="_blank">GitHub</a>.</p>
-    </TabPanel>
-
-    <TabPanel className='tabPanel'>
-        <p>This website was created during a 2-week internship in collaboration with my mentor. During the development of this project I had the opportunity to get familiar with React, Typescript, npm and Chakra UI. An HTML5UP template was adapted into a React app and Web3Forms was implemented to handle the contact form backend.</p>
-        
-        <ModalImage
-        small={Portfolio_small}
-        large={Portfolio}
-        alt="Portfolio website created in React."
-        hideDownload={true}
-        hideZoom={true}
-        />
-        <p>Used: React, TypeScript, <a href='https://chakra-ui.com/' target="_blank">Chakra UI</a>, <a href='https://html5up.net/' target="_blank">HTML5UP</a>, <a href='https://www.npmjs.com/package/react-awesome-reveal' target="_blank">React Awesome Reveal</a>, <a href='https://web3forms.com/' target="_blank">Web3Forms</a>, <a href='https://openai.com/blog/openai-api' target="_blank">OpenAI API</a></p>
-
-        + <a href='https://www.npmjs.com/package/react-multi-carousel' target="_blank">react-multi-carousel</a>
-    </TabPanel>
-
-    <TabPanel className='tabPanel'>
-        <p>Search<span style={{color: 'darkorange'}}>O</span>nce is a group project that combines APIs of three dictionaries into a single word search application. Bootstrap was used to style the components, dark mode was added using JavaScript. The collaboration was executed using Git, SCRUM and kanban.</p>
-        <ModalImage
-        small={SO_small}
-        large={SO}
-        alt="SearchOnce allows users to search for word definitions in 3 dictionaries."
-        hideDownload={true}
-        hideZoom={true}
-        />
-        <p>Used: HTML, CSS, JavaScript, <a href='https://bootswatch.com/flatly/' target="_blank">Bootstrap</a>, <a href='https://dictionaryapi.com/' target="_blank">Merriam-Webster Dictionary API</a>, <a href='https://www.mediawiki.org/wiki/API:Main_page' target="_blank">Wiktionary API</a>, <a href='https://rapidapi.com/community/api/urban-dictionary' target="_blank">Urban Dictionary API</a></p>
-        <p>Deployed at <a href='https://nlp-ug-2021-22.github.io/KreatywniInaczej-Project/' target="_blank">GitHub</a>.</p>
-    </TabPanel>
-
     <TabPanel className='tabPanel'>
         <p> A simple website that uses 4 different APIs to provide random facts. The text and buttons slide in on load. Images change opacity on hover to indicate interactivity.</p>
 
