@@ -18,6 +18,7 @@ export default function Projects() {
               <div className='projects-buttons'>
                 <ProjectModal key={project.name} project={project} />
                 <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo <IoIosArrowDropright size='30px' /></a>
+                <a href={project.github} className='btn source-code' target="_blank" rel="noreferrer">Source code <IoIosArrowDropright size='30px' /></a>
               </div>
             </div>
             )
