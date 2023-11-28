@@ -28,7 +28,7 @@
 }
 
 .react-multi-carousel-list button:not(.project-description-btn) {
-    background-color: var(--purple-darker);
+    background-color: var(--purple-dark);
 
     &:hover {
         background-color: var(--purple);
@@ -55,9 +55,19 @@
     }
 }
 
+.mobile-instructions {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 768px) {
     .react-multi-carousel-list button:not(.project-description-btn) {
-        top: 23vw;
+        visibility: hidden;
+    }
+
+    .mobile-instructions {
+        visibility: visible;
+        margin-bottom: 20px;
+        text-align: center;
     }
 }
 

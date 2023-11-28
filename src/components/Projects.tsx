@@ -9,6 +9,7 @@ export default function Projects() {
     return (
       <section id="projects">
         <h2>Projects</h2>
+        <div className='mobile-instructions'>Swipe left and right to see more projects.</div>
 
         <Carousel responsive={{ desktop: { breakpoint: { max: 4000, min: 0 }, items: 1 }}}>
           {ProjectsItems.map(project => {
