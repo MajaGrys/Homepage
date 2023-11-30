@@ -1,6 +1,6 @@
 
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, useDisclosure } from '@chakra-ui/react';
-import { IoIosArrowDropright } from "react-icons/io";
+import { FaFileLines } from "react-icons/fa6";
 import { ProjectsProps } from './ProjectsItems';
 
 export const ProjectModal = (project: { key: string, project: ProjectsProps }) => {
@@ -10,7 +10,7 @@ export const ProjectModal = (project: { key: string, project: ProjectsProps }) =
     return (
     <>
       <button className='btn project-description-btn' onClick={onOpen}>
-        Description <IoIosArrowDropright size='30px' />
+        Description <FaFileLines size='24px' />
       </button>
   
       <Modal isOpen={isOpen} onClose={onClose} size='xl' >
