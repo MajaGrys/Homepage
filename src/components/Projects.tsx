@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { IoIosArrowDropright } from "react-icons/io";
+import { FaEye, FaCode } from "react-icons/fa6";
 import '../assets/css/Projects.scss';
 import { ProjectModal } from './ProjectsModal';
 import { ProjectsItems } from './ProjectsItems';
@@ -18,8 +18,8 @@ export default function Projects() {
               <img src={project.img} alt='' />
               <div className='projects-buttons'>
                 <ProjectModal key={project.name} project={project} />
-                <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Live demo <IoIosArrowDropright size='30px' /></a>
-                <a href={project.github} className='btn source-code' target="_blank" rel="noreferrer">Source code <IoIosArrowDropright size='30px' /></a>
+                <a href={project.url} className='btn live-demo' target='_blank' rel="noreferrer" >Demo <FaEye size='26px' /></a>
+                <a href={project.github} className='btn source-code' target="_blank" rel="noreferrer">Source <FaCode size='26px' /></a>
               </div>
             </div>
             )

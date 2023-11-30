@@ -29,11 +29,11 @@ main {
     padding: 30px;
     background-color: var(--bg-color);
     font-family: var(--default-font);
-    overflow: auto;
+    overflow: hidden auto;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: var(--h2-font);
     color: var(--purple-darker);
     text-align: center;
@@ -69,6 +69,10 @@ h2 {
 @media screen and (min-width: 400px) {
     html {
         font-size: x-large;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 }
 
