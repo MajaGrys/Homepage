@@ -3,7 +3,7 @@ import { FiHome, FiTrello, FiCompass, FiAtSign, FiMessageSquare } from 'react-ic
 import { IconType } from 'react-icons';
 import { Icon } from '@chakra-ui/icons';
 import { Box } from '@chakra-ui/react';
-import avatar from '../assets/images/IMG_20230724_175635.jpg';
+import avatar from '../assets/images/IMG_20230724_175635.webp';
 
 interface LinkItemsProps {
     url: string,

@@ -1,7 +1,7 @@
 import { Card, CardBody } from "@chakra-ui/react";
 import { FaLocationDot, FaEnvelope, FaSquarePhone, FaGithub, FaLinkedin } from "react-icons/fa6";
 import '../assets/css/About.scss';
-import website from '../assets/images/website.png';
+import website from '../assets/images/website.webp';
 
 export default function Home() {
     return (

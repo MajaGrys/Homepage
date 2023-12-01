@@ -1,8 +1,8 @@
-import EventFinderImg from '../assets/images/EventFinderImg.png';
-import PortfolioImg from '../assets/images/PortfolioImg.png';
-import SearchOnceImg from '../assets/images/SearchOnceImg.png';
-import RandomFactsImg from '../assets/images/RandomFactsImg.png';
-import VanGoghImg from '../assets/images/VanGoghImg.png';
+import EventFinderImg from '../assets/images/EventFinderImg.webp';
+import PortfolioImg from '../assets/images/PortfolioImg.webp';
+import SearchOnceImg from '../assets/images/SearchOnceImg.webp';
+import RandomFactsImg from '../assets/images/RandomFactsImg.webp';
+import VanGoghImg from '../assets/images/VanGoghImg.webp';
 import { Badge, Tooltip } from '@chakra-ui/react'
 
 export interface ProjectsProps {
@@ -41,7 +41,7 @@ const Portfolio = () => {
                 <Badge colorScheme='purple'>React</Badge>
                 <Badge colorScheme='purple'>React Router</Badge>
                 <Badge colorScheme='purple'>Typescript</Badge>
-                <Badge colorScheme='purple'><a href='https://chakra-ui.com/' target="_blank">Chakra UI</a></Badge>
+                <Badge colorScheme='purple'><a href='https://chakra-ui.com/' target="_blank" rel="noreferrer">Chakra UI</a></Badge>
                 <Badge colorScheme='purple'>Responsive</Badge>
                 <Badge colorScheme='purple'><Tooltip label='react-awesome-reveal and react-multi-carousel' bg='purple.400' hasArrow>npm packages</Tooltip></Badge>
                 <Badge colorScheme='purple'><a href='https://web3forms.com/' target="_blank" rel="noreferrer">Web3Forms</a></Badge>
