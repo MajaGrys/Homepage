@@ -1,9 +1,18 @@
-#skillsList ul {
+.skillsSection {
+    margin: 30px auto;
     max-width: 1000px;
-    margin: auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+
+    h3 {
+        color: var(--purple);
+        font-size: xx-large;
+        font-family: var(--header-font);
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
 }
