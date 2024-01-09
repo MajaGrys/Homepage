@@ -30,6 +30,7 @@ export default function Skills() {
       'React',
       'React Router',
       'Redux',
+      'Vue',
       'npm',
       'TypeScript'
     ]
