@@ -26,16 +26,16 @@ export default function Home() {
                 <Card>
                     <CardBody>
                         <div id="about-info">
-                            <div id='mail'><a href="mailto:majagrys@wp.pl"><FaEnvelope size='26px' className="btn-link" /></a> majagrys@wp.pl</div>
+                            <div id='mail'><a href="mailto:majagrys@wp.pl" aria-label="Send me an email"><FaEnvelope size='26px' className="btn-link" /></a> majagrys@wp.pl</div>
                             
                             <div id='phone'><FaSquarePhone size='28px' /> +48 784 250 741</div>
 
-                            <div id='location'><a href="https://www.google.com/maps/place/Kwidzyn/@53.7204709,18.9039382,13z/data=!3m1!4b1!4m6!3m5!1s0x4702b0d59ad94955:0xec7032f22b47a281!8m2!3d53.7263529!4d18.9323043!16zL20vMDEzX3dy?entry=ttu" target="_blank" rel="noreferrer"><FaLocationDot size='28px' className="btn-link" /></a> Kwidzyn, Poland</div>
+                            <div id='location'><FaLocationDot size='28px' className="btn-link" /> Kwidzyn, Poland</div>
                         </div>
 
                         <div id="about-links">
-                            <a href="https://github.com/MajaGrys" target="_blank" rel="noreferrer"><FaGithub size='50px' className="btn-link" /></a>
-                            <a href="https://www.linkedin.com/in/maja-grys-2b3694294/" target="_blank" rel="noreferrer"><FaLinkedin size='50px' className="btn-link" /></a>
+                            <a href="https://github.com/MajaGrys" target="_blank" rel="noreferrer" aria-label="Check out my GitHub"><FaGithub size='50px' className="btn-link" /></a>
+                            <a href="https://www.linkedin.com/in/maja-grys-2b3694294/" target="_blank" rel="noreferrer" aria-label="Check out my LinkedIn"><FaLinkedin size='50px' className="btn-link" /></a>
                         </div>
                     </CardBody>
                 </Card>

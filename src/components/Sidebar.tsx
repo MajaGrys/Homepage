@@ -25,8 +25,8 @@ export default function Sidebar() {
             <div id='card'>
                 <img src={avatar} id='avatar' alt='' />
                 <figcaption>
-                    <h1>Maja Grys</h1>
-                    <h3>Frontend Developer</h3>
+                    <h1><div id='name'>Maja Grys</div>
+                    <div id='title'>Frontend Developer</div></h1>
                 </figcaption>
             </div>
 
@@ -43,6 +43,7 @@ export default function Sidebar() {
                 borderBottom='1px'
                 borderBottomColor={{ base: 'transparent', md: 'purple.900' }}
                 _hover={{ bg: 'purple.700', color: 'purple.100', borderColor: 'purple.900', borderRadius: 'xl' }}
+                _focus={{ bg: 'purple.700', color: 'purple.100', borderColor: 'purple.900', borderRadius: 'xl' }}
                 >
                     <Icon
                     as={link.icon}
