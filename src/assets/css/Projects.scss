@@ -1,6 +1,5 @@
 .projects-items {
     margin: auto;
-    max-width: 1000px;
     transition: 1s;
 }
 
@@ -9,6 +8,12 @@
     max-height: 500px;
     margin: auto;
     transition: 1s;
+}
+
+.projects-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .live-demo, .project-description-btn, .source-code {
@@ -20,13 +25,8 @@
     }
 }
 
-.projects-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.react-multi-carousel-list button:not(.project-description-btn) {
+// Change the colour of carousel's arrows
+.react-multi-carousel-list button:not(.project-description-btn, .carousel-dots li button) {
     background-color: var(--purple-dark);
 
     &:hover {
@@ -48,7 +48,7 @@
     a {
         transition: 0.5s;
     
-        &:hover {
+        &:hover, &:focus {
             color: var(--purple);
         }
     }
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 768px) {
     .react-multi-carousel-list button:not(.project-description-btn) {
-        visibility: hidden;
+        opacity: 0%;
     }
 
     .mobile-instructions {
@@ -77,7 +77,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 100;
-        visibility: hidden;
         opacity: 0;
         transition: 0.5s;
     }
@@ -88,7 +87,6 @@
         }
     
         .projects-buttons {
-            visibility: visible;
             opacity: 1;
         }
     }
