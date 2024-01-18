@@ -35,6 +35,13 @@ export default function Skills() {
       'TypeScript'
     ]
 
+    const backend = [
+      'Node',
+      'Express',
+      'SQL',
+      'MongoDB'
+    ]
+
     const testing = [
       'Jest',
       'Cypress',
@@ -54,6 +61,7 @@ export default function Skills() {
         <p id='skillsList'>
           <Bounce cascade damping={0.5} triggerOnce={true}>
             <SkillsCard name='Frontend' group={frontend} />
+            <SkillsCard name='Backend' group={backend} />
             <SkillsCard name='Testing' group={testing} />
             <SkillsCard name='DevOps' group={devops} />
           </Bounce>
