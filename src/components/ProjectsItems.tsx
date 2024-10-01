@@ -1,9 +1,10 @@
 import EventFinderImg from '../assets/images/EventFinderImg.webp';
 import PortfolioImg from '../assets/images/PortfolioImg.webp';
+import BetulaITImg from '../assets/images/BetulaITImg.webp';
 import SearchOnceImg from '../assets/images/SearchOnceImg.webp';
 import RandomFactsImg from '../assets/images/RandomFactsImg.webp';
 import VanGoghImg from '../assets/images/VanGoghImg.webp';
-import { Badge, Tooltip } from '@chakra-ui/react'
+import { Badge, Tooltip } from '@chakra-ui/react';
 
 export interface ProjectsProps {
     name: string,
@@ -48,6 +49,19 @@ const Portfolio = () => {
                 <Badge colorScheme='purple'>REST API</Badge>
                 <Badge colorScheme='purple'><a href='https://openai.com/blog/openai-api' target="_blank" rel="noreferrer">OpenAI API</a></Badge>
                 <Badge colorScheme='purple'>Git</Badge>
+            </p>
+        </div>
+    )
+}
+
+const BetulaIT = () => {
+    return (
+        <div className='project-description'>
+            <p>This is my first Vue project - a computer store website. It is still not complete, I intend to improve responsivity of the website, add more content in modals etc.</p>
+            <p className='project-badges'>
+                <Badge colorScheme='purple'>Vue</Badge>
+                <Badge colorScheme='purple'>Vite</Badge>
+                <Badge colorScheme='purple'>AOS</Badge>
             </p>
         </div>
     )
@@ -109,6 +123,14 @@ export const ProjectsItems:Array<ProjectsProps> = [
         url: 'https://majagrys.github.io/Portfolio/',
         github: 'https://github.com/MajaGrys/Portfolio',
         description: <Portfolio />
+    },
+    
+    { 
+        name: 'Betula IT',
+        img: BetulaITImg,
+        url: 'https://majagrys.github.io/BetulaIT/',
+        github: 'https://github.com/MajaGrys/BetulaIT',
+        description: <BetulaIT />
     },
     { 
         name: 'SearchOnce',
