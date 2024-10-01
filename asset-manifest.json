@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.1eddf623.css",
-    "main.js": "/Portfolio/static/js/main.746e5be7.js",
+    "main.js": "/Portfolio/static/js/main.8daaa8cf.js",
     "static/js/787.c096999d.chunk.js": "/Portfolio/static/js/787.c096999d.chunk.js",
     "static/media/VanGoghImg.webp": "/Portfolio/static/media/VanGoghImg.04f331c62aacc380a99b.webp",
     "static/media/RandomFactsImg.webp": "/Portfolio/static/media/RandomFactsImg.9f37e25e32492bdaa353.webp",
     "static/media/PortfolioImg.webp": "/Portfolio/static/media/PortfolioImg.4a9866cbad443e6bd50c.webp",
     "static/media/SearchOnceImg.webp": "/Portfolio/static/media/SearchOnceImg.736c6bc90031f78587fa.webp",
     "static/media/website.webp": "/Portfolio/static/media/website.bde2fbfe4958c3da1441.webp",
+    "static/media/BetulaITImg.webp": "/Portfolio/static/media/BetulaITImg.9cfc0e5836c64be04330.webp",
     "static/media/IMG_20230724_175635.webp": "/Portfolio/static/media/IMG_20230724_175635.130cb9fb62a33f7d17ce.webp",
     "static/media/EventFinderImg.webp": "/Portfolio/static/media/EventFinderImg.402dc69c6f3d5efdc5ac.webp",
     "static/media/revicons.eot": "/Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
@@ -15,11 +16,11 @@
     "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio/index.html",
     "main.1eddf623.css.map": "/Portfolio/static/css/main.1eddf623.css.map",
-    "main.746e5be7.js.map": "/Portfolio/static/js/main.746e5be7.js.map",
+    "main.8daaa8cf.js.map": "/Portfolio/static/js/main.8daaa8cf.js.map",
     "787.c096999d.chunk.js.map": "/Portfolio/static/js/787.c096999d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1eddf623.css",
-    "static/js/main.746e5be7.js"
+    "static/js/main.8daaa8cf.js"
   ]
 }
