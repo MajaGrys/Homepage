@@ -28,9 +28,9 @@ export default function Home() {
                         <div id="about-info">
                             <div id='mail'><a href="mailto:majagrys@wp.pl" aria-label="Send me an email"><FaEnvelope size='26px' className="btn-link" /></a> majagrys@wp.pl</div>
                             
-                            <div id='phone'><FaSquarePhone size='28px' /> +48 784 250 741</div>
+                            <div id='phone'><FaSquarePhone size='28px' color='var(--purple-dark)' /> +48 784 250 741</div>
 
-                            <div id='location'><FaLocationDot size='28px' className="btn-link" /> Kwidzyn, Poland</div>
+                            <div id='location'><FaLocationDot size='28px' color='var(--purple-dark)' /> Kwidzyn, Poland</div>
                         </div>
 
                         <div id="about-links">
