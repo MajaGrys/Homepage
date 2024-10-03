@@ -35,7 +35,7 @@ export default function Home() {
 
                         <div id="about-links">
                             <a href="https://github.com/MajaGrys" target="_blank" rel="noreferrer" aria-label="Check out my GitHub"><FaGithub size='50px' className="btn-link" /></a>
-                            <a href="https://www.linkedin.com/in/maja-grys-2b3694294/" target="_blank" rel="noreferrer" aria-label="Check out my LinkedIn"><FaLinkedin size='50px' className="btn-link" /></a>
+                            <a href="https://www.linkedin.com/in/maja-grys" target="_blank" rel="noreferrer" aria-label="Check out my LinkedIn"><FaLinkedin size='50px' className="btn-link" /></a>
                         </div>
                     </CardBody>
                 </Card>
