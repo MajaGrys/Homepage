@@ -91,8 +91,12 @@ const SearchOnce = () => {
 const RandomFacts = () => {
     return (
         <div className='project-description'>
-            <p>Coming soon...</p>
+            <p>A simple website built during the web development course. It allows users to receive a random fact from one of four categories.</p>
             <p className='project-badges'>
+                <Badge colorScheme='purple'>HTML</Badge>
+                <Badge colorScheme='purple'>CSS</Badge>
+                <Badge colorScheme='purple'>Javascript</Badge>
+                <Badge colorScheme='purple'>API</Badge>
             </p>
         </div>
     )
@@ -101,9 +105,12 @@ const RandomFacts = () => {
 const VanGoghGallery = () => {
     return (
         <div className='project-description'>
-            <p>Coming soon...</p>
+            <p>The first website I have ever created. It presents a brief description of Vincent Van Gogh's life and his paintings.</p>
             <p className='project-badges'>
-                <Badge colorScheme='purple'>.</Badge>
+                <Badge colorScheme='purple'>HTML</Badge>
+                <Badge colorScheme='purple'>CSS</Badge>
+                <Badge colorScheme='purple'>Javascript</Badge>
+                <Badge colorScheme='purple'>Responsive</Badge>
             </p>
         </div>
     )
@@ -147,7 +154,7 @@ export const ProjectsItems:Array<ProjectsProps> = [
         description: <RandomFacts />
     },
     { 
-        name: 'Van Gogh Gallery',
+        name: 'Van Gogh\'s Gallery',
         img: VanGoghImg,
         url: 'https://majagrys.github.io/Van-Gogh-Gallery/',
         github: 'https://github.com/MajaGrys/Van-Gogh-Gallery',
