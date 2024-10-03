@@ -91,8 +91,12 @@ const SearchOnce = () => {
 const RandomFacts = () => {
     return (
         <div className='project-description'>
-            <p>Coming soon...</p>
+            <p>A simple website built during the web development course. It allows users to receive a random fact from one of four categories.</p>
             <p className='project-badges'>
+                <Badge colorScheme='purple'>HTML</Badge>
+                <Badge colorScheme='purple'>CSS</Badge>
+                <Badge colorScheme='purple'>Javascript</Badge>
+                <Badge colorScheme='purple'>API</Badge>
             </p>
         </div>
     )
