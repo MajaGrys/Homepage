@@ -38,6 +38,7 @@ export default function Skills() {
     const backend = [
       'Node',
       'Express',
+      'NestJS',
       'SQL',
       'MongoDB'
     ]
