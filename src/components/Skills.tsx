@@ -32,7 +32,8 @@ export default function Skills() {
       'Redux',
       'Vue',
       'npm',
-      'TypeScript'
+      'TypeScript',
+      'GraphQL',
     ]
 
     const backend = [
@@ -40,20 +41,20 @@ export default function Skills() {
       'Express',
       'NestJS',
       'SQL',
-      'MongoDB'
+      'MongoDB',
     ]
 
     const testing = [
       'Jest',
       'Cypress',
-      'Postman'
+      'Postman',
     ]
 
     const devops = [
       'Git',
       'Agile',
       'Scrum',
-      'Docker'
+      'Docker',
     ]
 
     return (
