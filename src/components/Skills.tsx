@@ -46,6 +46,7 @@ export default function Skills() {
 
     const testing = [
       'unit testing',
+      'E2E testing',
       'Jest',
       'Cypress',
       'Postman',
