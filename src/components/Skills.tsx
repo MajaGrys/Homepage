@@ -21,11 +21,11 @@ const SkillsCard = (props: { name: string, group: string[] }) => {
 
 export default function Skills() {
     const frontend = [
-      'HTML5',
-      'CSS3',
+      'HTML',
+      'CSS',
       'Bootstrap',
       'Responsive web design',
-      'JavaScript ES6',
+      'JavaScript',
       'REST API',
       'React',
       'React Router',
