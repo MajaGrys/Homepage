@@ -34,6 +34,7 @@ export default function Skills() {
       'npm',
       'TypeScript',
       'GraphQL',
+      'SEO'
     ]
 
     const backend = [
