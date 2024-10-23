@@ -33,7 +33,6 @@ export default function Skills() {
       'Vue',
       'npm',
       'TypeScript',
-      'GraphQL',
       'SEO'
     ]
 
@@ -43,6 +42,7 @@ export default function Skills() {
       'NestJS',
       'SQL',
       'MongoDB',
+      'GraphQL'
     ]
 
     const testing = [
