@@ -11,7 +11,7 @@ export default function Home() {
                 <Card>
                     <CardBody>
                         <div id="hello">Hello, I'm <span id="Maja">Maja</span> ! 👋</div>
-                        <div>A frontend developer aiming to learn backend this year 😎</div>
+                        <div>I'm a web developer 😎</div>
                         <p>I love exploring and creating 🚀</p>
                         <img src={website} alt='' />
                     </CardBody>
