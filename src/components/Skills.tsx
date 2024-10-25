@@ -23,6 +23,7 @@ export default function Skills() {
     const frontend = [
       'HTML',
       'CSS',
+      'SASS',
       'Bootstrap',
       'Responsive web design',
       'JavaScript',
