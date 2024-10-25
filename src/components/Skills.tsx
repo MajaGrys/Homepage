@@ -52,6 +52,7 @@ export default function Skills() {
       'Jest',
       'Cypress',
       'Postman',
+      'WCAG'
     ]
 
     const devops = [
